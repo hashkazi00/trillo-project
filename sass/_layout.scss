@@ -1,0 +1,92 @@
+.container{
+    max-width:120rem;
+    margin: 8rem auto;
+    background-color: var(--color-grey-light-1);
+    box-shadow: var(--shadow-dark);
+
+    min-height:50rem;
+
+    @media only screen and (max-width:$bt-largest){
+        margin: 0;
+        max-width: 100%; //so that the container now occupies full width
+        width: 100%;
+    }
+}
+
+.header{
+    height: 7rem;
+    font-size: 1.4rem;
+    background-color: white;
+    border-bottom: 1.5px solid var(--color-grey-light-2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+     @media only screen and (max-width: $bt-smallest){
+        flex-wrap: wrap;
+        height: 11rem;
+        align-content: space-around;
+    }
+
+}
+
+.content{
+    display: flex;
+    
+    @media only screen and (max-width:$bt-medium){
+        flex-direction: column;
+    }
+}
+.sidebar{
+    background-color: var(--color-grey-dark-1);
+    flex: 0 0 18%; // we dont-want it to grow if extra space is available, nor do we want it to shrink if less space is availble, we want its width to always be 18%
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-view{
+    background: white ;
+    flex:1;
+}
+
+.detail{
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: 1px solid var(--color-grey-light-2);
+    font-size: 1.4rem;
+
+    @media only screen and (max-width:$bt-medium){
+        padding: 3rem;
+    }
+
+    @media only screen and (max-width: $bt-small){
+        flex-direction: column;
+    }
+
+}   
+.description{
+    background-color:white;
+    flex:0 0 60%;
+    margin-right: 4.5rem;
+    box-shadow: var(--shadow-light);
+    padding: 3.5rem;
+    @media only screen and (max-width:$bt-medium){
+        padding: 2rem;
+        margin-right: 3rem;
+    }
+    @media only screen and (max-width: $bt-small){
+        margin-right: 0rem;
+        margin-bottom: 3rem;
+        
+    }
+}
+
+.user-reviews{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
