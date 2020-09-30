@@ -1,6 +1,6 @@
 # Course: [Advanced CSS and SASS ](https://www.udemy.com/advanced-css-and-sass/)
 ## Author: Jonas Schmedtmann
-## Student: Sahil Kazi
+## Student: SahilKazi
 ##### [See the live demo ](https://trillo-project.vercel.app/)
 ---
 
